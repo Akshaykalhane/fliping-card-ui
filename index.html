@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <div class="flex-col-center HomePage">
+        <!-- Logo Container (if isLaptopView is true) -->
+        <div class="flex-row-center logoContainer">
+          <img src="./images/header/logo.png" alt="logo" />
+        </div>
+      
+        <!-- Header -->
+        <header class="flex-col-center header">
+          <h1>Flip, Match, and Win!</h1>
+      
+          <!-- Content Text -->
+          <div class="flex-col-center content_text">
+            <p class="txt2 txt">
+              Test your memory and have fun with our card-matching game. Every player will earn 🎉
+              <em><strong>50 loyalty points,</strong></em> and the 👑
+              <em><strong>top 10 winners will receive special surprise gifts.</strong></em>
+            </p>
+            <p class="txt2">Enjoy the game and good luck! 🥳</p>
+          </div>
+        </header>
+      
+        <!-- Product Image -->
+        <div class="product_image">
+          <img src="./images/home/makeup.png" alt="makeup-kit" />
+        </div>
+      
+        <!-- Play Form Container -->
+        <div class="flex-col-center playFormContainer">
+          <!-- How to Play Wrapper -->
+          <div class="flex-col-center how_to_play_wrapper">
+            <h2>HOW TO PLAY?</h2>
+            <ul class="flex-col-center">
+              <li class="txt2">The cards are placed face down, with each card having a matching pair.</li>
+              <li class="txt2">Select 2 cards at a time.</li>
+              <li class="txt2">If the cards match, you move on to the next pair.</li>
+              <li class="txt2">If the cards don't match, they are turned face down again.</li>
+              <li class="txt2">Match all the cards before the timer runs out.</li>
+            </ul>
+          </div>
+      
+          <!-- Form -->
+          <form class="flex-col-center user_form" onsubmit="handleSubmit(event)">
+            <div class="flex-col-center input_field">
+              <label for="name" class="txt2">Name*</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Rysha"
+                value=""
+                onchange="setName(event.target.value)"
+                class="txt2"
+                required
+              />
+            </div>
+      
+            <div class="flex-col-center input_field">
+              <label for="mobile_number" class="txt2">Mobile Number*</label>
+              <input
+                type="number"
+                name="mobileNumber"
+                id="mobile_number"
+                placeholder="98765-xxxxx"
+                value=""
+                onchange="setMobileNumber(event.target.value)"
+                class="txt2"
+                required
+                maxlength="10"
+              />
+            </div>
+      
+            <button type="submit" class="txt2">Start Game</button>
+          </form>
+        </div>
+      
+        <!-- Back to Website Link (if isLaptopView is true) -->
+        <a href="https://www.colorbarcosmetics.com" target="_blank" class="txt2 link">Back to Website</a>
+      
+        <!-- BgIcons Component (if isLaptopView is true) -->
+        <!-- You will need to include the appropriate HTML or component for BgIcons -->
+      </div>
+      
+
+
+    <script>
+        // homePage.js
+
+
+    </script>
+</body>
+</html>
